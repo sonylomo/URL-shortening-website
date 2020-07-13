@@ -1,6 +1,6 @@
 body{
-    /*width: 1440px;*/
-    width: 1440px;
+    /* width: 100vw;
+    max-width: 100vw; */
     font-size: 18px;
     font-family: 'Poppins', sans-serif;
 }
@@ -169,8 +169,8 @@ body{
     background-position: center;
     background-size: cover;
     background-color:hsl(260, 8%, 14%);
+    max-width: 100vw !important;
 }
-
 
 
 .boost-link button{
@@ -191,6 +191,7 @@ footer{
     background-size: cover;
     background-color:hsl(260, 8%, 14%);
     height: 270px;
+    max-width: 100vw !important;
     color: hsl(0, 0%, 75%);
 }
 
