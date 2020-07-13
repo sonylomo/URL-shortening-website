@@ -1,188 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  
+
   <title>Shortly</title>
- 
+
 </head>
+
 <body>
 
   <!--navbar-->
-<div class="container">
-  
-  <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-    <a class="navbar-brand" href="#features"><img src="./images/logo.svg" alt="Shortly"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#features">Features <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#pricing">Pricing</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#resources">Resources</a>
-        </li>
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <a id="login" href="#">Login</a>
-        <button id="signup" class="btn btn-sm my-2 my-sm-0 text-center" type="submit" class="rounded-pill">Sign Up</button>
-      </form>
-    </div>
-  </nav>
+  <div class="container">
 
-  <div class="row" id="features">
-    <div class="col-6 features">
-      <h1 id="intro">More than just shorter links</h1>
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+      <a class="navbar-brand" href="#features"><img src="./images/logo.svg" alt="Shortly"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-      <p>Build your brand’s recognition and get detailed insights 
-        on how your links are performing.</p>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#features">Features <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#pricing">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#resources">Resources</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <a id="login" href="#">Login</a>
+          <button id="signup" class="btn btn-sm my-2 my-sm-0 text-center" type="submit" class="rounded-pill">Sign
+            Up</button>
+        </form>
+      </div>
+    </nav>
 
-      <button type="submit">Get Started</button> 
+    <div class="row" id="features">
+      <div class="col-6 features">
+        <h1 id="intro">More than just shorter links</h1>
+
+        <p>Build your brand’s recognition and get detailed insights
+          on how your links are performing.</p>
+
+        <button type="submit">Get Started</button>
+      </div>
+
+      <div class="col-6">
+        <img src="./images/illustration-working.svg" alt="working-illustration">
+      </div>
     </div>
-    
-    <div class="col-6">
-      <img src="./images/illustration-working.svg" alt="working-illustration">
-    </div>
-    </div>
-  
+
   </div>
 
- <div id="bg">
-<div id="pricing">
-    <div class="shortenurl">
-      <div class="input-group form-inline">
-        <input type="text" class="form-control" id="shortenit" placeholder="https://www.example.com" aria-label="Shortenit" aria-describedby="shortenitbtn" required>
-        <div class="input-group">
-          <button class="btn" id="shortenitbtn" type="submit" onclick="shortener()">Shorten It!</button>
+  <div id="bg">
+    <div id="pricing">
+      <div class="shortenurl">
+        <div class="input-group form-inline">
+          <input type="text" class="form-control" id="shortenit" placeholder="https://www.example.com"
+            aria-label="Shortenit" aria-describedby="shortenitbtn" required>
+          <div class="input-group">
+            <button class="btn" id="shortenitbtn" type="submit" onclick="shortener()">Shorten It!</button>
+          </div>
         </div>
       </div>
-    </div> 
 
-    <div id="display" class="text-center" style="padding-top: 30px;"></div>
+      <div id="display" class="text-center" style="padding-top: 30px;"></div>
 
-    <div class="advstats">
-      <h2 class="text-center">Advanced Statistics</h2>
+      <div class="advstats">
+        <h2 class="text-center">Advanced Statistics</h2>
 
-      <p class="text-center stat-text">Track how your links are performing across the web with our 
-      advanced statistics dashboard.</p>
-    
-      <div class="row statcards">
+        <p class="text-center stat-text">Track how your links are performing across the web with our
+          advanced statistics dashboard.</p>
+
+        <div class="row statcards">
 
 
-        <div class="col-4" id="card-1">
-         
-          <div class="card" style="width: 21rem; height: 16rem;">
-            <div class="card-body">
-              <div class="circle"><img src="./images/icon-brand-recognition.svg" alt="br_rec"></div>
-              <h5 class="card-title" style="font-weight: 700;"> Brand Recognition</h5>
-              <p class="card-text">Boost your brand recognition with each click. Generic links don’t 
-                mean a thing. Branded links help instil confidence in your content.</p>
-              
+          <div class="col-4" id="card-1">
+
+            <div class="card" style="width: 21rem; height: 16rem;">
+              <div class="card-body">
+                <div class="circle"><img src="./images/icon-brand-recognition.svg" alt="br_rec"></div>
+                <h5 class="card-title" style="font-weight: 700;"> Brand Recognition</h5>
+                <p class="card-text">Boost your brand recognition with each click. Generic links don’t
+                  mean a thing. Branded links help instil confidence in your content.</p>
+
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="col-4" id="card-2">
-          <div class="card" style="width: 21rem; height: 16rem;">
-            <div class="card-body">
-              <div class="circle"><img src="./images/icon-detailed-records.svg" alt="det_rec"></div>
-              <h5 class="card-title" style="font-weight: 700;">Detailed Records</h5>
-              <p class="card-text">Gain insights into who is clicking your links. Knowing when and where 
-                people engage with your content helps inform better decisions.</p>
-             
+          <div class="col-4" id="card-2">
+            <div class="card" style="width: 21rem; height: 16rem;">
+              <div class="card-body">
+                <div class="circle"><img src="./images/icon-detailed-records.svg" alt="det_rec"></div>
+                <h5 class="card-title" style="font-weight: 700;">Detailed Records</h5>
+                <p class="card-text">Gain insights into who is clicking your links. Knowing when and where
+                  people engage with your content helps inform better decisions.</p>
+
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="col-4" id="card-3">
-         <div class="card" style="width: 21rem; height: 16rem;">
-            <div class="card-body">
-              <div class="circle"><img src="./images/icon-fully-customizable.svg" alt="ful_cust"></div>
-              <h5 class="card-title" style="font-weight: 700;"> Fully Customizable</h5>
-              <p class="card-text">Improve brand awareness and content discoverability through customizable 
-                links, supercharging audience engagement.</p>
-              
+          <div class="col-4" id="card-3">
+            <div class="card" style="width: 21rem; height: 16rem;">
+              <div class="card-body">
+                <div class="circle"><img src="./images/icon-fully-customizable.svg" alt="ful_cust"></div>
+                <h5 class="card-title" style="font-weight: 700;"> Fully Customizable</h5>
+                <p class="card-text">Improve brand awareness and content discoverability through customizable
+                  links, supercharging audience engagement.</p>
+
+              </div>
             </div>
           </div>
+
+          <hr id="card_link">
         </div>
 
-        <hr id="card_link">
-    </div>
-      
+      </div>
     </div>
   </div>
-</div> 
 
 
   <div id="resources">
     <div class="boost-link">
       <h2 class="text-center text-white" style="padding-top: 20px;">Boost your links today</h2>
-      <button >Get Started</button>
+      <button>Get Started</button>
     </div>
-    
-    <footer class="row">
-      <div class="col-3">
-        <img id="whitelogo" src="./images/logo.svg" alt="Shortly">
-      </div>
+  </div>
 
-      <div class="col-2">
-        <h5>Features</h5>
+  <footer class="row">
+    <div class="col-3">
+      <img id="whitelogo" src="./images/logo.svg" alt="Shortly">
+    </div>
 
-        Link Shortening<br>
-        Branded Links<br>
-        Analytics
-      </div>
+    <div class="col-2">
+      <h5>Features</h5>
 
-      <div class="col-2">
-        <h5>Resources</h5>
+      Link Shortening<br>
+      Branded Links<br>
+      Analytics
+    </div>
 
-        Blog<br>
-        Developers<br>
-        Support
-      </div>
+    <div class="col-2">
+      <h5>Resources</h5>
 
-      <div class="col-2">
-        <h5>Company</h5>
+      Blog<br>
+      Developers<br>
+      Support
+    </div>
 
-        About<br>
-        Our Team<br>
-        Careers<br>
-        Contact
-      </div>
+    <div class="col-2">
+      <h5>Company</h5>
 
-      <div class="col-3">
-        <img src="./images/icon-facebook.svg" alt="fb">
-        <img src="./images/icon-twitter.svg" alt="twitter">
-        <img src="./images/icon-pinterest.svg" alt="pinterest">
-        <img src="./images/icon-instagram.svg" alt="insta">
-      </div>
-      <div class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-        Coded by <a href="https://github.com/sonylomo">Sony Lomo</a>.
-      </div>
-    </footer>
-  </div>  
-</div>
-  
+      About<br>
+      Our Team<br>
+      Careers<br>
+      Contact
+    </div>
 
-  
-</div>
+    <div class="col-3">
+      <img src="./images/icon-facebook.svg" alt="fb">
+      <img src="./images/icon-twitter.svg" alt="twitter">
+      <img src="./images/icon-pinterest.svg" alt="pinterest">
+      <img src="./images/icon-instagram.svg" alt="insta">
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/sonylomo">Sony Lomo</a>.
+    </div>
+  </footer>
+
+
+
+  </div>
   <script src="index.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
